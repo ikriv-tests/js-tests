@@ -1,0 +1,12 @@
+<html>
+<body>
+<h1>We are about to leave...</h1>
+<script>
+window.onbeforeunload = function (e) {
+  e.returnValue = "Do you want to navigate away from this page?";
+  return e.returnValue;
+};
+</script>
+<script src="this_window.js"></script>
+</body>
+</html>
